@@ -1,5 +1,6 @@
 html {
     --main-color: #333333;
+    --secondary-color: #fa694e;
 }
 
 * {
@@ -47,6 +48,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .header .container {
@@ -137,3 +139,79 @@ body {
 }
 
 /* header */
+
+/* Landing */
+.landing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+}
+
+.landing::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.landing .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.landing .container .mainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.landing .container .mainText h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.landing .container .mainText p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.landing .container .mainText button {
+    max-width: 500px;
+    padding: 20px 40px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.landing .container .mainText button:hover {
+    cursor: pointer;
+    background-color: #b4321b;
+}
+
+@media (max-width: 600px) {
+    .landing .container .mainText h1 {
+        font-size: 60px;
+    }
+    
+    .landing .container .mainText p {
+        font-size: 20px;
+    }
+}
+
+/* Landing */
