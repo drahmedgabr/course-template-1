@@ -5,6 +5,7 @@ html {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,8 +14,7 @@ body {
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -248,3 +248,61 @@ body {
     color: #777;
 }
 /* Services */
+
+/* Stories */
+.stories {
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.stories .container h3 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.stories .container p {
+    font-size: 25px;
+}
+
+.stories .container .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.stories .container .cards a {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.stories .container .cards .card {
+    width: 330px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.stories .container .cards .card .imgDiv {
+    height: 50%;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories .container .cards .card .imgDiv img {
+    max-width: 50%;
+}
+
+.stories .container .cards .card .details {
+    padding: 10px;
+}
+
+
+/* Stories */
