@@ -443,3 +443,48 @@ body {
 
 
 /* Contact */
+
+/* Footer */
+
+.footer {
+    margin-top: 40px;
+    background-color: var(--main-color);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer .container .social {
+    display: flex;
+}
+
+.footer .container .social .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container .social .icon a {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+@media (max-width: 767px) {
+    .footer .container {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
