@@ -290,6 +290,9 @@ body {
     .stories .container .content .image {
         display: none;
     }
+    .stories .container .cards .card {
+        width: 300px;
+    }
 }
 
 .stories .container h3 {
