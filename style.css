@@ -40,6 +40,14 @@ body {
     }
 }
 
+.specialTitle {
+    font-size: 60px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+    margin: 0;
+}
+
 /* header */
 
 .header {
@@ -277,18 +285,14 @@ body {
 
 .stories .container .content .image::before {
     content: "";
-    width: 60px;
+    width: 120px;
     height: 80%;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     position: absolute;
     top: 10%;
     right: 0px;
+    opacity: 0.2;
     z-index: -1;
-}
-
-.stories .container h3 {
-    font-size: 35px;
-    margin: 0;
 }
 
 .stories .container p {
@@ -357,3 +361,85 @@ body {
 }
 
 /* Stories */
+
+/* Contact */
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact .container .contents{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .container .contents .details h3 {
+    font-size: 25px;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+.contact .container .contents .details p {
+    font-size: 22px;
+    color: #777;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.contact .container .form {
+    margin-left: 40px;
+    flex: 1;
+}
+
+.contact .container .form input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F1F5F8;
+    font-size: 22px;
+    color: #777;
+    outline-color: var(--secondary-color);
+    resize: none;
+}
+
+.contact .container .form button {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact .container .form button:hover {
+    cursor: pointer;
+    background-color: #b4321b;
+}
+
+.contact .container .form .firstRow {
+    display: flex;
+}
+
+.contact .container .form .firstRow input:nth-child(2) {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .contact .container .contents{
+        flex-direction: column;
+    }
+
+    .contact .container .form {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+
+/* Contact */
