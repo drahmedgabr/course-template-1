@@ -257,6 +257,41 @@ body {
     text-align: center;
 }
 
+.stories .container .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stories .container .content .image {
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.stories .container .content .image img {
+    width: 300px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.stories .container .content .image::before {
+    content: "";
+    width: 60px;
+    height: 80%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (max-width: 1199px) {
+    .stories .container .content .image {
+        display: none;
+    }
+}
+
 .stories .container h3 {
     font-size: 35px;
     margin: 0;
@@ -271,6 +306,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 40px;
+    flex-grow: 1;
 }
 
 .stories .container .cards a {
@@ -279,11 +315,12 @@ body {
 }
 
 .stories .container .cards .card {
-    width: 330px;
+    width: 230px;
+    height: 90%;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -302,6 +339,17 @@ body {
 
 .stories .container .cards .card .details {
     padding: 10px;
+}
+
+.stories .container .cards .card .details h1 {
+    font-size: 25px;
+}
+
+.stories .container .cards .card .details p {
+    font-size: 18px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
