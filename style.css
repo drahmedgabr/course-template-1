@@ -286,15 +286,6 @@ body {
     z-index: -1;
 }
 
-@media (max-width: 1199px) {
-    .stories .container .content .image {
-        display: none;
-    }
-    .stories .container .cards .card {
-        width: 320px;
-    }
-}
-
 .stories .container h3 {
     font-size: 35px;
     margin: 0;
@@ -323,7 +314,8 @@ body {
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -355,5 +347,13 @@ body {
     text-overflow: ellipsis;
 }
 
+@media (max-width: 1199px) {
+    .stories .container .content .image {
+        display: none;
+    }
+    .stories .container .cards .card {
+        width: 330px;
+    }
+}
 
 /* Stories */
