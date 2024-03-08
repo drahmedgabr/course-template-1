@@ -1,0 +1,57 @@
+
+.card {
+  width: 80%;
+  background-image: url(images/ramadan2.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Rakkas;
+  box-shadow: 0px 20px 30px #808080b8;
+}
+
+.card img {
+  width: 20%;
+  max-width: 150px;
+  animation-name: anim1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.card h1 {
+  font-size: 50px;
+  color: rgb(62, 20, 20);
+}
+
+.card p {
+  font-size: 40px;
+  color: rgb(84, 84, 178);
+}
+
+.card .nameSpan {
+  color: rgb(84, 84, 178);
+}
+
+@keyframes anim1 {
+  
+  0% {
+    transform: rotate(20deg);
+    filter: brightness(1) drop-shadow(10px 10px 10px #808080);
+  }
+
+  50% {
+    filter: brightness(0.3);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+    filter: brightness(1) drop-shadow(10px 10px 10px #808080);
+  }
+
+}
