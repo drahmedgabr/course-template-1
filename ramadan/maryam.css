@@ -1,0 +1,74 @@
+
+.card {
+    width: 80%;
+    padding: 20px;
+    background-image: url(images/ramadan2.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Rakkas;
+    box-shadow: 0 0 20px #808080;
+  }
+  
+  .card .topDiv {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card .fanoosImg {
+    width: 30%;
+    max-width: 150px;
+    animation-name: anim1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .card .personalImg {
+    width: 50%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #808080b8;
+  }
+  
+  .card h1 {
+    font-size: 50px;
+    color: #d95b5b;
+  }
+  
+  .card p {
+    font-size: 40px;
+    color: rgb(84, 84, 178);
+  }
+  
+  .card .nameSpan {
+    color: rgb(84, 84, 178);
+  }
+  
+  .card i {
+    font-size: 50px;
+    color: rgb(84, 84, 178);
+  }
+  
+  @keyframes anim1 {
+    
+    0% {
+      transform: rotate(20deg);
+      filter: brightness(1) drop-shadow(10px 10px 10px #808080);
+    }
+  
+    50% {
+      filter: brightness(0.3);
+    }
+  
+    100% {
+      transform: rotate(-20deg);
+      filter: brightness(1) drop-shadow(10px 10px 10px #808080);
+    }
+  
+  }
